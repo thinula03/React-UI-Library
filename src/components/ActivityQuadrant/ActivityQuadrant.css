@@ -1,0 +1,82 @@
+@import '../../styles/tokens.css';
+
+.jui-activity-quadrant {
+  aspect-ratio: 1;
+  background:
+    radial-gradient(circle at center, rgb(34 197 94 / 9%), transparent 34%),
+    linear-gradient(180deg, rgb(255 255 255 / 80%), rgb(248 251 255 / 42%));
+  border: 1px solid rgb(221 232 242 / 70%);
+  border-radius: 26px;
+  color: var(--jui-color-text-muted);
+  margin: 0;
+  min-height: 20rem;
+  overflow: hidden;
+  padding: 0.75rem;
+  position: relative;
+}
+
+.jui-activity-quadrant svg {
+  height: 100%;
+  width: 100%;
+}
+
+.jui-activity-quadrant__axis {
+  stroke: var(--jui-color-success);
+  stroke-linecap: round;
+  stroke-width: 1.65;
+}
+
+.jui-activity-quadrant__shape {
+  fill: rgb(34 197 94 / 22%);
+  stroke: var(--jui-color-success);
+  stroke-linejoin: round;
+  stroke-width: 1.55;
+}
+
+.jui-activity-quadrant__point {
+  fill: var(--jui-color-surface);
+  stroke: var(--jui-color-success);
+  stroke-width: 1.7;
+}
+
+.jui-activity-quadrant__label {
+  background: rgb(255 255 255 / 82%);
+  border: 1px solid rgb(255 255 255 / 92%);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgb(80 94 115 / 9%);
+  display: grid;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  min-width: 6rem;
+  padding: 0.45rem 0.65rem;
+  position: absolute;
+  text-align: center;
+}
+
+.jui-activity-quadrant__label strong {
+  color: var(--jui-color-text);
+}
+
+.jui-activity-quadrant__label--top {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.jui-activity-quadrant__label--right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.jui-activity-quadrant__label--bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.jui-activity-quadrant__label--left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

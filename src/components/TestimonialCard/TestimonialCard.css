@@ -1,0 +1,35 @@
+@import '../../styles/tokens.css';
+
+.jui-testimonial-card {
+  background: var(--jui-color-surface);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-sm);
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.jui-testimonial-card blockquote {
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.jui-testimonial-card figcaption {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.jui-testimonial-card figcaption span {
+  display: grid;
+}
+
+.jui-testimonial-card small {
+  color: var(--jui-color-text-muted);
+  font-size: 0.8125rem;
+}

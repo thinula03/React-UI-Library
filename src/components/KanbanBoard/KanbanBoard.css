@@ -1,0 +1,50 @@
+@import '../../styles/tokens.css';
+
+.jui-kanban {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(12rem, 1fr));
+  overflow: auto;
+}
+
+.jui-kanban__column {
+  background: var(--jui-color-muted);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.jui-kanban__column-header {
+  align-items: center;
+  color: var(--jui-color-text);
+  display: flex;
+  font-size: 0.875rem;
+  justify-content: space-between;
+}
+
+.jui-kanban__column-header span {
+  color: var(--jui-color-text-muted);
+}
+
+.jui-kanban__cards {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.jui-kanban__card {
+  background: var(--jui-color-surface);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-sm);
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.75rem;
+}
+
+.jui-kanban__card span {
+  color: var(--jui-color-text-muted);
+  font-size: 0.8125rem;
+}

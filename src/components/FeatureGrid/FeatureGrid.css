@@ -1,0 +1,59 @@
+@import '../../styles/tokens.css';
+
+.jui-feature-grid {
+  display: grid;
+  gap: 0.875rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+
+.jui-feature-grid__item {
+  background:
+    linear-gradient(145deg, rgb(8 125 248 / 8%), transparent 56%),
+    rgb(255 255 255 / 88%);
+  border: 1px solid rgb(255 255 255 / 84%);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-sm);
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.1rem;
+}
+
+.jui-feature-grid__topline {
+  align-items: center;
+  display: flex;
+  gap: 0.625rem;
+}
+
+.jui-feature-grid__icon {
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 12px 24px rgb(80 94 115 / 12%);
+  border-radius: var(--jui-radius-sm);
+  color: var(--jui-color-primary);
+  display: inline-flex;
+  font-weight: 800;
+  height: 2.35rem;
+  justify-content: center;
+  width: 2.35rem;
+}
+
+.jui-feature-grid__eyebrow {
+  color: var(--jui-color-primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.jui-feature-grid__item h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.jui-feature-grid__item p {
+  color: var(--jui-color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  margin: 0;
+}

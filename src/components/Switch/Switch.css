@@ -39,26 +39,26 @@
 }
 
 .jui-switch__track {
-  background: #cbd5e1;
+  background: #d9e2ec;
   border-radius: 999px;
   display: inline-flex;
-  height: 1.5rem;
+  height: 1.75rem;
   position: relative;
   transition: background-color 160ms ease;
-  width: 2.75rem;
+  width: 3.15rem;
 }
 
 .jui-switch__track::after {
   background: #ffffff;
   border-radius: 999px;
-  box-shadow: var(--jui-shadow-sm);
+  box-shadow: 0 8px 16px rgb(80 94 115 / 18%);
   content: '';
-  height: 1.125rem;
-  left: 0.1875rem;
+  height: 1.35rem;
+  left: 0.2rem;
   position: absolute;
-  top: 0.1875rem;
+  top: 0.2rem;
   transition: transform 160ms ease;
-  width: 1.125rem;
+  width: 1.35rem;
 }
 
 .jui-switch__input:checked + .jui-switch__track {
@@ -66,7 +66,7 @@
 }
 
 .jui-switch__input:checked + .jui-switch__track::after {
-  transform: translateX(1.25rem);
+  transform: translateX(1.4rem);
 }
 
 .jui-switch__input:focus-visible + .jui-switch__track {

@@ -1,0 +1,51 @@
+@import '../../styles/tokens.css';
+
+.jui-drawer__overlay {
+  background: rgb(15 23 42 / 48%);
+  inset: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.jui-drawer {
+  background: var(--jui-color-surface);
+  box-shadow: var(--jui-shadow-md);
+  color: var(--jui-color-text);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: min(28rem, 100vw);
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.jui-drawer--left {
+  left: 0;
+}
+
+.jui-drawer--right {
+  right: 0;
+}
+
+.jui-drawer__header {
+  align-items: center;
+  border-bottom: 1px solid var(--jui-color-border);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.jui-drawer__title {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.jui-drawer__body {
+  color: var(--jui-color-text-muted);
+  line-height: 1.6;
+  overflow: auto;
+  padding: 1rem;
+}

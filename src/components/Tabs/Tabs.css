@@ -7,9 +7,10 @@
 }
 
 .jui-tabs__list {
-  background: var(--jui-color-muted);
-  border: 1px solid var(--jui-color-border);
-  border-radius: var(--jui-radius-md);
+  background: rgb(255 255 255 / 72%);
+  border: 1px solid rgb(255 255 255 / 90%);
+  border-radius: 999px;
+  box-shadow: 0 16px 36px rgb(80 94 115 / 10%);
   display: flex;
   gap: 0.25rem;
   padding: 0.25rem;
@@ -18,20 +19,20 @@
 .jui-tabs__trigger {
   background: transparent;
   border: 0;
-  border-radius: var(--jui-radius-sm);
+  border-radius: 999px;
   color: var(--jui-color-text-muted);
   cursor: pointer;
   flex: 1 1 0;
   font: inherit;
   font-size: 0.875rem;
   font-weight: 650;
-  min-height: 2rem;
-  padding: 0 0.75rem;
+  min-height: 2.45rem;
+  padding: 0 1rem;
 }
 
 .jui-tabs__trigger[aria-selected='true'] {
-  background: var(--jui-color-surface);
-  box-shadow: var(--jui-shadow-sm);
+  background: #ffffff;
+  box-shadow: 0 12px 26px rgb(80 94 115 / 12%);
   color: var(--jui-color-text);
 }
 

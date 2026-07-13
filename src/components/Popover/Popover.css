@@ -1,0 +1,43 @@
+@import '../../styles/tokens.css';
+
+.jui-popover {
+  display: inline-flex;
+  position: relative;
+}
+
+.jui-popover__trigger {
+  cursor: pointer;
+  list-style: none;
+}
+
+.jui-popover__trigger::-webkit-details-marker {
+  display: none;
+}
+
+.jui-popover__trigger:focus-visible {
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}
+
+.jui-popover:not([open]) .jui-popover__content {
+  display: none;
+}
+
+.jui-popover__content {
+  background: rgb(255 255 255 / 94%);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgb(255 255 255 / 92%);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-md);
+  color: var(--jui-color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  max-width: min(18rem, calc(100vw - 2rem));
+  min-width: min(14rem, calc(100vw - 2rem));
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  z-index: 30;
+}

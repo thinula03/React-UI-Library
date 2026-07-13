@@ -8,33 +8,34 @@
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 1;
-  min-height: 1.5rem;
-  padding: 0 0.625rem;
+  min-height: 1.75rem;
+  padding: 0 0.75rem;
   white-space: nowrap;
 }
 
 .jui-badge--neutral {
-  background: var(--jui-color-muted);
-  border-color: var(--jui-color-border);
+  background: #ffffff;
+  border-color: rgb(255 255 255 / 90%);
+  box-shadow: 0 8px 20px rgb(80 94 115 / 10%);
   color: var(--jui-color-text);
 }
 
 .jui-badge--primary {
-  background: #eff6ff;
+  background: rgb(8 125 248 / 10%);
   color: var(--jui-color-primary-hover);
 }
 
 .jui-badge--success {
-  background: #ecfdf5;
+  background: rgb(18 128 92 / 10%);
   color: var(--jui-color-success);
 }
 
 .jui-badge--warning {
-  background: #fffbeb;
+  background: rgb(183 121 31 / 11%);
   color: var(--jui-color-warning);
 }
 
 .jui-badge--danger {
-  background: #fef2f2;
+  background: rgb(220 38 38 / 10%);
   color: var(--jui-color-danger-hover);
 }

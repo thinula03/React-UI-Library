@@ -1,0 +1,62 @@
+@import '../../styles/tokens.css';
+
+.jui-tag-input {
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 0.375rem;
+  width: 100%;
+}
+
+.jui-tag-input__label {
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+
+.jui-tag-input__control {
+  align-items: center;
+  background: var(--jui-color-bg);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  min-height: 2.5rem;
+  padding: 0.375rem;
+}
+
+.jui-tag-input__control:focus-within {
+  border-color: var(--jui-color-primary);
+  box-shadow: var(--jui-focus-ring);
+}
+
+.jui-tag-input__tag {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.125rem;
+}
+
+.jui-tag-input__remove {
+  background: transparent;
+  border: 0;
+  border-radius: var(--jui-radius-sm);
+  color: var(--jui-color-text-muted);
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+  padding: 0.125rem;
+}
+
+.jui-tag-input__remove:focus-visible {
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}
+
+.jui-tag-input__input {
+  border: 0;
+  color: var(--jui-color-text);
+  flex: 1 1 8rem;
+  font: inherit;
+  min-height: 1.75rem;
+  min-width: 5rem;
+  outline: none;
+}

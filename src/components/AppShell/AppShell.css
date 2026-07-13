@@ -1,0 +1,55 @@
+@import '../../styles/tokens.css';
+
+.jui-app-shell {
+  background: var(--jui-color-bg);
+  color: var(--jui-color-text);
+  container-type: inline-size;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.jui-app-shell__header {
+  align-items: center;
+  border-bottom: 1px solid var(--jui-color-border);
+  display: flex;
+  min-height: 3.5rem;
+  padding: 0 1rem;
+}
+
+.jui-app-shell__body {
+  display: grid;
+  grid-template-columns: minmax(9rem, 34%) minmax(0, 1fr);
+  min-height: 0;
+}
+
+.jui-app-shell__sidebar {
+  border-right: 1px solid var(--jui-color-border);
+  padding: 1rem;
+}
+
+.jui-app-shell__main {
+  min-width: 0;
+  padding: 1rem;
+}
+
+@media (max-width: 760px) {
+  .jui-app-shell__body {
+    grid-template-columns: 1fr;
+  }
+
+  .jui-app-shell__sidebar {
+    border-bottom: 1px solid var(--jui-color-border);
+    border-right: 0;
+  }
+}
+
+@container (max-width: 620px) {
+  .jui-app-shell__body {
+    grid-template-columns: 1fr;
+  }
+
+  .jui-app-shell__sidebar {
+    border-bottom: 1px solid var(--jui-color-border);
+    border-right: 0;
+  }
+}

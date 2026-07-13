@@ -1,0 +1,32 @@
+@import '../../styles/tokens.css';
+
+.jui-before-after {
+  --jui-before-after: 50%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--jui-radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.jui-before-after__image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.jui-before-after__before {
+  clip-path: inset(0 calc(100% - var(--jui-before-after)) 0 0);
+  inset: 0;
+  position: absolute;
+}
+
+.jui-before-after__handle {
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgb(15 23 42 / 20%);
+  height: 100%;
+  left: var(--jui-before-after);
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 3px;
+}

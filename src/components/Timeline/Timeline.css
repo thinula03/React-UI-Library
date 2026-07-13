@@ -1,0 +1,55 @@
+@import '../../styles/tokens.css';
+
+.jui-timeline {
+  display: grid;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jui-timeline__item {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: auto 1fr;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.jui-timeline__item:not(:last-child)::before {
+  background: var(--jui-color-border);
+  content: '';
+  height: 100%;
+  left: 0.4375rem;
+  position: absolute;
+  top: 1rem;
+  width: 1px;
+}
+
+.jui-timeline__dot {
+  background: var(--jui-color-primary);
+  border: 2px solid var(--jui-color-surface);
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px var(--jui-color-primary);
+  height: 0.875rem;
+  margin-top: 0.25rem;
+  width: 0.875rem;
+  z-index: 1;
+}
+
+.jui-timeline__copy {
+  display: grid;
+  gap: 0.125rem;
+}
+
+.jui-timeline__title {
+  color: var(--jui-color-text);
+  font-size: 0.9375rem;
+}
+
+.jui-timeline__meta,
+.jui-timeline__content {
+  color: var(--jui-color-text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}

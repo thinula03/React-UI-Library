@@ -1,0 +1,62 @@
+@import '../../styles/tokens.css';
+
+.jui-3d-bar-chart {
+  align-items: end;
+  background:
+    linear-gradient(135deg, rgb(8 125 248 / 10%), transparent),
+    var(--jui-color-muted);
+  border: 1px solid rgb(255 255 255 / 84%);
+  border-radius: var(--jui-radius-md);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  min-height: 15rem;
+  overflow: hidden;
+  padding: 1.5rem 1rem 1rem;
+  perspective: 700px;
+}
+
+.jui-3d-bar-chart__item {
+  align-items: center;
+  display: grid;
+  gap: 0.75rem;
+  height: 100%;
+}
+
+.jui-3d-bar-chart__bar {
+  align-items: end;
+  display: flex;
+  height: 11rem;
+  justify-content: center;
+  transform: rotateX(58deg) rotateZ(-28deg);
+  transform-style: preserve-3d;
+}
+
+.jui-3d-bar-chart__bar span {
+  background: var(--jui-3d-bar-color, var(--jui-color-primary));
+  box-shadow:
+    0.75rem 0.75rem 0 rgb(15 23 42 / 16%),
+    inset -0.5rem 0 rgb(15 23 42 / 14%);
+  display: block;
+  height: var(--jui-3d-bar-height);
+  min-height: 1rem;
+  position: relative;
+  width: 2.25rem;
+}
+
+.jui-3d-bar-chart__bar span::before {
+  background: color-mix(in srgb, var(--jui-3d-bar-color, var(--jui-color-primary)) 74%, white);
+  content: '';
+  height: 0.75rem;
+  left: 0.375rem;
+  position: absolute;
+  top: -0.75rem;
+  transform: skewX(-45deg);
+  width: 2.25rem;
+}
+
+.jui-3d-bar-chart__item strong {
+  color: var(--jui-color-text);
+  font-size: 0.8125rem;
+  text-align: center;
+}

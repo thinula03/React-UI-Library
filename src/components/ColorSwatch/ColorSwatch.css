@@ -1,0 +1,30 @@
+@import '../../styles/tokens.css';
+
+.jui-color-swatch {
+  align-items: center;
+  background: var(--jui-color-surface);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 0.625rem;
+  grid-template-columns: auto 1fr auto;
+  padding: 0.625rem;
+}
+
+.jui-color-swatch__chip {
+  border: 1px solid rgb(15 23 42 / 12%);
+  border-radius: var(--jui-radius-sm);
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.jui-color-swatch__label {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.jui-color-swatch__value {
+  color: var(--jui-color-text-muted);
+  font-size: 0.75rem;
+}

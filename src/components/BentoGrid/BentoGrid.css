@@ -1,0 +1,38 @@
+@import '../../styles/tokens.css';
+
+.jui-bento-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-auto-rows: minmax(7rem, auto);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.jui-bento-item {
+  background: var(--jui-color-surface);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-sm);
+  color: var(--jui-color-text);
+  min-width: 0;
+  padding: 1rem;
+}
+
+.jui-bento-item--wide {
+  grid-column: span 2;
+}
+
+.jui-bento-item--tall {
+  grid-row: span 2;
+}
+
+@media (max-width: 760px) {
+  .jui-bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jui-bento-item--wide,
+  .jui-bento-item--tall {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}

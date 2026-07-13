@@ -3,7 +3,7 @@
 .jui-button {
   align-items: center;
   border: 1px solid transparent;
-  border-radius: var(--jui-radius-md);
+  border-radius: 999px;
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;
@@ -11,6 +11,8 @@
   gap: 0.5rem;
   justify-content: center;
   line-height: 1;
+  overflow: hidden;
+  position: relative;
   transition:
     background-color 160ms ease,
     border-color 160ms ease,
@@ -20,8 +22,24 @@
   white-space: nowrap;
 }
 
+.jui-button::before {
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 36%), transparent);
+  content: '';
+  height: 100%;
+  left: -120%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-18deg);
+  transition: left 450ms ease;
+  width: 70%;
+}
+
 .jui-button:hover:not(:disabled) {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+}
+
+.jui-button:hover:not(:disabled)::before {
+  left: 130%;
 }
 
 .jui-button:focus-visible {
@@ -36,20 +54,20 @@
 
 .jui-button--sm {
   font-size: 0.875rem;
-  min-height: 2rem;
-  padding: 0 0.75rem;
+  min-height: 2.25rem;
+  padding: 0 0.95rem;
 }
 
 .jui-button--md {
   font-size: 0.9375rem;
-  min-height: 2.5rem;
-  padding: 0 1rem;
+  min-height: 2.9rem;
+  padding: 0 1.35rem;
 }
 
 .jui-button--lg {
   font-size: 1rem;
-  min-height: 3rem;
-  padding: 0 1.25rem;
+  min-height: 3.35rem;
+  padding: 0 1.65rem;
 }
 
 .jui-button--full-width {
@@ -57,8 +75,10 @@
 }
 
 .jui-button--primary {
-  background: var(--jui-color-primary);
-  box-shadow: 0 8px 18px rgb(37 99 235 / 20%);
+  background: linear-gradient(180deg, #168bff, var(--jui-color-primary));
+  box-shadow:
+    0 18px 38px rgb(8 125 248 / 30%),
+    inset 0 1px 0 rgb(255 255 255 / 36%);
   color: #ffffff;
 }
 
@@ -67,13 +87,16 @@
 }
 
 .jui-button--secondary {
-  background: var(--jui-color-muted);
-  border-color: var(--jui-color-border);
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border-color: rgb(255 255 255 / 90%);
+  box-shadow:
+    0 14px 34px rgb(80 94 115 / 12%),
+    inset 0 1px 0 rgb(255 255 255 / 80%);
   color: var(--jui-color-text);
 }
 
 .jui-button--secondary:hover:not(:disabled) {
-  background: #f1f5f9;
+  background: #f8fafc;
   border-color: var(--jui-color-border-strong);
 }
 
@@ -83,11 +106,11 @@
 }
 
 .jui-button--ghost:hover:not(:disabled) {
-  background: #eff6ff;
+  background: rgb(8 125 248 / 9%);
 }
 
 .jui-button--danger {
-  background: var(--jui-color-danger);
+  background: linear-gradient(180deg, #ef4444, var(--jui-color-danger));
   box-shadow: 0 8px 18px rgb(220 38 38 / 18%);
   color: #ffffff;
 }

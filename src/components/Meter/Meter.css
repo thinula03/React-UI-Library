@@ -1,0 +1,25 @@
+@import '../../styles/tokens.css';
+
+.jui-meter {
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.jui-meter__meta {
+  align-items: center;
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 650;
+  justify-content: space-between;
+}
+
+.jui-meter__value {
+  color: var(--jui-color-text-muted);
+}
+
+.jui-meter__bar {
+  height: 0.625rem;
+  width: 100%;
+}

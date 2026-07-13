@@ -1,0 +1,19 @@
+@import '../../styles/tokens.css';
+
+.jui-spotlight-card {
+  --jui-spotlight-x: 50%;
+  --jui-spotlight-y: 50%;
+  background:
+    radial-gradient(
+      24rem circle at var(--jui-spotlight-x) var(--jui-spotlight-y),
+      rgb(96 165 250 / 20%),
+      transparent 42%
+    ),
+    var(--jui-color-surface);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-sm);
+  color: var(--jui-color-text);
+  overflow: hidden;
+  padding: 1rem;
+}

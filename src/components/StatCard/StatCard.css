@@ -1,0 +1,40 @@
+@import '../../styles/tokens.css';
+
+.jui-stat-card {
+  background: rgb(255 255 255 / 88%);
+  border: 1px solid rgb(255 255 255 / 82%);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-sm);
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 0.375rem;
+  padding: 1rem;
+}
+
+.jui-stat-card__label {
+  color: var(--jui-color-text-muted);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.jui-stat-card__value {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.jui-stat-card__trend {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.jui-stat-card__trend--up {
+  color: var(--jui-color-success);
+}
+
+.jui-stat-card__trend--down {
+  color: var(--jui-color-danger);
+}
+
+.jui-stat-card__trend--neutral {
+  color: var(--jui-color-text-muted);
+}

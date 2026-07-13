@@ -1,0 +1,99 @@
+@import '../../styles/tokens.css';
+
+.jui-callout {
+  border: 1px solid rgb(255 255 255 / 72%);
+  border-radius: var(--jui-radius-md);
+  box-shadow: 0 12px 28px rgb(80 94 115 / 8%);
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: auto 1fr;
+  padding: 0.875rem;
+}
+
+.jui-callout__icon {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgb(80 94 115 / 16%);
+  height: 1.75rem;
+  justify-content: center;
+  width: 1.75rem;
+}
+
+.jui-callout__copy {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.jui-callout__title {
+  color: var(--jui-color-text);
+  font-size: 0.9375rem;
+}
+
+.jui-callout__content {
+  color: var(--jui-color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.jui-callout--info {
+  background: rgb(8 125 248 / 8%);
+  border-color: rgb(8 125 248 / 16%);
+}
+
+.jui-callout--info .jui-callout__icon {
+  background: var(--jui-color-primary);
+  color: #ffffff;
+}
+
+.jui-callout--success {
+  background: rgb(18 128 92 / 8%);
+  border-color: rgb(18 128 92 / 16%);
+}
+
+.jui-callout--success .jui-callout__icon {
+  background: var(--jui-color-success);
+  color: #ffffff;
+}
+
+.jui-callout--warning {
+  background: rgb(183 121 31 / 9%);
+  border-color: rgb(183 121 31 / 16%);
+}
+
+.jui-callout--warning .jui-callout__icon {
+  background: var(--jui-color-warning);
+  color: #ffffff;
+}
+
+.jui-callout--danger {
+  background: rgb(220 38 38 / 8%);
+  border-color: rgb(220 38 38 / 16%);
+}
+
+.jui-callout--danger .jui-callout__icon {
+  background: var(--jui-color-danger);
+  color: #ffffff;
+}
+
+[data-jui-theme='dark'] .jui-callout--info {
+  background: rgb(37 99 235 / 16%);
+  border-color: rgb(96 165 250 / 45%);
+}
+
+[data-jui-theme='dark'] .jui-callout--success {
+  background: rgb(4 120 87 / 18%);
+  border-color: rgb(52 211 153 / 42%);
+}
+
+[data-jui-theme='dark'] .jui-callout--warning {
+  background: rgb(180 83 9 / 18%);
+  border-color: rgb(251 191 36 / 44%);
+}
+
+[data-jui-theme='dark'] .jui-callout--danger {
+  background: rgb(220 38 38 / 18%);
+  border-color: rgb(248 113 113 / 44%);
+}

@@ -1,0 +1,28 @@
+@import '../../styles/tokens.css';
+
+.jui-error-summary {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-left: 4px solid var(--jui-color-danger);
+  border-radius: var(--jui-radius-md);
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+}
+
+.jui-error-summary__title {
+  font-size: 0.9375rem;
+}
+
+.jui-error-summary__list {
+  color: var(--jui-color-danger-hover);
+  font-size: 0.875rem;
+  margin: 0;
+  padding-left: 1.125rem;
+}
+
+.jui-error-summary__link {
+  color: inherit;
+  font-weight: 650;
+}

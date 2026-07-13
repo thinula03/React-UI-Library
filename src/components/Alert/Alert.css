@@ -1,8 +1,9 @@
 @import '../../styles/tokens.css';
 
 .jui-alert {
-  border: 1px solid transparent;
+  border: 1px solid rgb(255 255 255 / 72%);
   border-radius: var(--jui-radius-md);
+  box-shadow: 0 12px 28px rgb(80 94 115 / 8%);
   display: grid;
   gap: 0.25rem;
   padding: 0.875rem 1rem;
@@ -20,21 +21,21 @@
 }
 
 .jui-alert--info {
-  background: #eff6ff;
-  border-color: #bfdbfe;
+  background: rgb(8 125 248 / 8%);
+  border-color: rgb(8 125 248 / 16%);
 }
 
 .jui-alert--success {
-  background: #ecfdf5;
-  border-color: #a7f3d0;
+  background: rgb(18 128 92 / 8%);
+  border-color: rgb(18 128 92 / 16%);
 }
 
 .jui-alert--warning {
-  background: #fffbeb;
-  border-color: #fde68a;
+  background: rgb(183 121 31 / 9%);
+  border-color: rgb(183 121 31 / 16%);
 }
 
 .jui-alert--danger {
-  background: #fef2f2;
-  border-color: #fecaca;
+  background: rgb(220 38 38 / 8%);
+  border-color: rgb(220 38 38 / 16%);
 }

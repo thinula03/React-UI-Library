@@ -1,0 +1,79 @@
+@import '../../styles/tokens.css';
+
+.jui-pricing-table {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+}
+
+.jui-pricing-table__tier {
+  background: rgb(255 255 255 / 88%);
+  border: 1px solid rgb(255 255 255 / 84%);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-sm);
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: auto auto 1fr auto;
+  padding: 1.2rem;
+}
+
+.jui-pricing-table__tier--highlighted {
+  border-color: var(--jui-color-primary);
+  box-shadow:
+    0 24px 55px rgb(8 125 248 / 20%),
+    inset 0 0 0 1px rgb(8 125 248 / 20%);
+  position: relative;
+}
+
+.jui-pricing-table__header {
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.jui-pricing-table__header h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.jui-pricing-table__header p {
+  color: var(--jui-color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0.25rem 0 0;
+}
+
+.jui-pricing-table__price {
+  align-items: baseline;
+  display: flex;
+  gap: 0.375rem;
+}
+
+.jui-pricing-table__price strong {
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.jui-pricing-table__price span {
+  color: var(--jui-color-text-muted);
+  font-size: 0.875rem;
+}
+
+.jui-pricing-table__features {
+  color: var(--jui-color-text-muted);
+  display: grid;
+  font-size: 0.875rem;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jui-pricing-table__features li::before {
+  color: var(--jui-color-success);
+  content: '✓';
+  font-weight: 800;
+  margin-right: 0.5rem;
+}

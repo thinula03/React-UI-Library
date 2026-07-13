@@ -1,0 +1,50 @@
+@import '../../styles/tokens.css';
+
+.jui-ai-chat {
+  background:
+    linear-gradient(145deg, rgb(8 125 248 / 8%), transparent 44%),
+    var(--jui-color-muted);
+  border: 1px solid rgb(255 255 255 / 84%);
+  border-radius: var(--jui-radius-md);
+  display: grid;
+  gap: 0.875rem;
+  padding: 1rem;
+}
+
+.jui-ai-chat__message {
+  align-items: flex-start;
+  color: var(--jui-color-text);
+  display: flex;
+  gap: 0.625rem;
+  max-width: 92%;
+}
+
+.jui-ai-chat__message--user {
+  flex-direction: row-reverse;
+  justify-self: end;
+}
+
+.jui-ai-chat__bubble {
+  background: rgb(255 255 255 / 92%);
+  border: 1px solid rgb(255 255 255 / 88%);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-sm);
+  display: grid;
+  gap: 0.35rem;
+  line-height: 1.5;
+  padding: 0.85rem 1rem;
+}
+
+.jui-ai-chat__message--user .jui-ai-chat__bubble {
+  background: linear-gradient(180deg, #168bff, var(--jui-color-primary));
+  border-color: var(--jui-color-primary);
+  color: white;
+}
+
+.jui-ai-chat__bubble strong {
+  font-size: 0.75rem;
+}
+
+.jui-ai-chat__bubble div {
+  font-size: 0.875rem;
+}

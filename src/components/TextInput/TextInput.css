@@ -8,18 +8,23 @@
 }
 
 .jui-field__label {
-  font-size: 0.875rem;
+  color: var(--jui-color-text-muted);
+  font-size: 0.8125rem;
   font-weight: 650;
 }
 
 .jui-text-input {
-  background: var(--jui-color-bg);
-  border: 1px solid var(--jui-color-border);
-  border-radius: var(--jui-radius-md);
+  background:
+    linear-gradient(180deg, #f8fafc, #f2f6fa);
+  border: 1px solid transparent;
+  border-radius: 18px;
+  box-shadow:
+    inset 0 1px 2px rgb(80 94 115 / 7%),
+    inset 0 -1px 0 rgb(255 255 255 / 80%);
   color: var(--jui-color-text);
   font: inherit;
-  min-height: 2.5rem;
-  padding: 0 0.75rem;
+  min-height: 3rem;
+  padding: 0 1rem;
   transition:
     border-color 160ms ease,
     box-shadow 160ms ease;
@@ -32,7 +37,10 @@
 
 .jui-text-input:focus {
   border-color: var(--jui-color-primary);
-  box-shadow: var(--jui-focus-ring);
+  background: #ffffff;
+  box-shadow:
+    var(--jui-focus-ring),
+    0 16px 36px rgb(8 125 248 / 13%);
   outline: none;
 }
 

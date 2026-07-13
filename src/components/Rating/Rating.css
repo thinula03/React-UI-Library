@@ -1,0 +1,31 @@
+@import '../../styles/tokens.css';
+
+.jui-rating {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.125rem;
+}
+
+.jui-rating__star {
+  background: transparent;
+  border: 0;
+  border-radius: var(--jui-radius-sm);
+  color: #cbd5e1;
+  font: inherit;
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 0.125rem;
+}
+
+button.jui-rating__star {
+  cursor: pointer;
+}
+
+.jui-rating__star--active {
+  color: #f59e0b;
+}
+
+button.jui-rating__star:focus-visible {
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}

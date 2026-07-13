@@ -1,0 +1,8 @@
+.jui-grid {
+  display: grid;
+  gap: var(--jui-grid-gap);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--jui-grid-min-column-width)), 1fr)
+  );
+}

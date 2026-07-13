@@ -1,0 +1,6 @@
+@import '../../styles/tokens.css';
+
+.jui-theme-provider {
+  background: var(--jui-color-bg);
+  color: var(--jui-color-text);
+}

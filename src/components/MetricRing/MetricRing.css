@@ -1,0 +1,33 @@
+@import '../../styles/tokens.css';
+
+.jui-metric-ring {
+  align-items: center;
+  color: var(--jui-color-text);
+  display: inline-grid;
+  gap: 0.625rem;
+  justify-items: center;
+}
+
+.jui-metric-ring__chart {
+  align-items: center;
+  background:
+    radial-gradient(var(--jui-color-surface) 58%, transparent 60%),
+    conic-gradient(var(--jui-color-primary) var(--jui-ring-value), #e2e8f0 0);
+  border-radius: 999px;
+  display: inline-flex;
+  height: 6rem;
+  justify-content: center;
+  width: 6rem;
+}
+
+.jui-metric-ring__value {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.jui-metric-ring__label {
+  color: var(--jui-color-text-muted);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+}

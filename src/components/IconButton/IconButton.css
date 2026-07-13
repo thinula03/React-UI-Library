@@ -1,0 +1,75 @@
+@import '../../styles/tokens.css';
+
+.jui-icon-button {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 120ms ease;
+}
+
+.jui-icon-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.jui-icon-button:focus-visible {
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}
+
+.jui-icon-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.jui-icon-button--sm {
+  height: 2rem;
+  width: 2rem;
+}
+
+.jui-icon-button--md {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.jui-icon-button--lg {
+  height: 3rem;
+  width: 3rem;
+}
+
+.jui-icon-button--primary {
+  background: linear-gradient(180deg, #168bff, var(--jui-color-primary));
+  box-shadow:
+    0 14px 30px rgb(8 125 248 / 26%),
+    inset 0 1px 0 rgb(255 255 255 / 36%);
+  color: #ffffff;
+}
+
+.jui-icon-button--secondary {
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border-color: rgb(255 255 255 / 90%);
+  box-shadow:
+    0 14px 30px rgb(80 94 115 / 12%),
+    inset 0 1px 0 rgb(255 255 255 / 80%);
+  color: var(--jui-color-text);
+}
+
+.jui-icon-button--ghost {
+  background: transparent;
+  color: var(--jui-color-primary);
+}
+
+.jui-icon-button--danger {
+  background: var(--jui-color-danger);
+  color: #ffffff;
+}

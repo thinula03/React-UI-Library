@@ -1,20 +1,43 @@
 :root {
-  --jui-color-bg: #ffffff;
+  --jui-color-bg: #eef4f9;
   --jui-color-surface: #ffffff;
-  --jui-color-muted: #f8fafc;
-  --jui-color-border: #cbd5e1;
-  --jui-color-border-strong: #94a3b8;
-  --jui-color-text: #0f172a;
-  --jui-color-text-muted: #475569;
-  --jui-color-primary: #2563eb;
-  --jui-color-primary-hover: #1d4ed8;
+  --jui-color-muted: #f5f7fa;
+  --jui-color-border: #dde8f2;
+  --jui-color-border-strong: #c6d5e4;
+  --jui-color-text: #1d2430;
+  --jui-color-text-muted: #6f7a89;
+  --jui-color-primary: #087df8;
+  --jui-color-primary-hover: #006be0;
   --jui-color-danger: #dc2626;
   --jui-color-danger-hover: #b91c1c;
-  --jui-color-success: #047857;
-  --jui-color-warning: #b45309;
-  --jui-radius-sm: 6px;
-  --jui-radius-md: 8px;
-  --jui-shadow-sm: 0 1px 2px rgb(15 23 42 / 8%);
-  --jui-shadow-md: 0 10px 25px rgb(15 23 42 / 10%);
-  --jui-focus-ring: 0 0 0 3px rgb(37 99 235 / 25%);
+  --jui-color-success: #12805c;
+  --jui-color-warning: #b7791f;
+  --jui-radius-sm: 16px;
+  --jui-radius-md: 28px;
+  --jui-shadow-sm:
+    0 18px 45px rgb(80 94 115 / 13%),
+    0 2px 8px rgb(80 94 115 / 6%);
+  --jui-shadow-md:
+    0 34px 90px rgb(80 94 115 / 21%),
+    0 8px 24px rgb(80 94 115 / 10%);
+  --jui-focus-ring: 0 0 0 4px rgb(8 125 248 / 18%);
+}
+
+[data-jui-theme='dark'] {
+  --jui-color-bg: #0f172a;
+  --jui-color-surface: #111827;
+  --jui-color-muted: #1f2937;
+  --jui-color-border: #334155;
+  --jui-color-border-strong: #64748b;
+  --jui-color-text: #f8fafc;
+  --jui-color-text-muted: #cbd5e1;
+  --jui-color-primary: #60a5fa;
+  --jui-color-primary-hover: #93c5fd;
+  --jui-color-danger: #f87171;
+  --jui-color-danger-hover: #fca5a5;
+  --jui-color-success: #34d399;
+  --jui-color-warning: #fbbf24;
+  --jui-shadow-sm: 0 1px 2px rgb(0 0 0 / 30%);
+  --jui-shadow-md: 0 10px 25px rgb(0 0 0 / 35%);
+  --jui-focus-ring: 0 0 0 3px rgb(96 165 250 / 32%);
 }

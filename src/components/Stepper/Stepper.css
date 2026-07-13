@@ -1,0 +1,54 @@
+@import '../../styles/tokens.css';
+
+.jui-stepper {
+  counter-reset: step;
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jui-stepper__item {
+  align-items: flex-start;
+  color: var(--jui-color-text-muted);
+  display: flex;
+  gap: 0.75rem;
+}
+
+.jui-stepper__marker {
+  align-items: center;
+  background: var(--jui-color-muted);
+  border: 1px solid var(--jui-color-border);
+  border-radius: 999px;
+  color: var(--jui-color-text-muted);
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.8125rem;
+  font-weight: 750;
+  height: 1.75rem;
+  justify-content: center;
+  width: 1.75rem;
+}
+
+.jui-stepper__item--complete .jui-stepper__marker,
+.jui-stepper__item--active .jui-stepper__marker {
+  background: var(--jui-color-primary);
+  border-color: var(--jui-color-primary);
+  color: #ffffff;
+}
+
+.jui-stepper__copy {
+  display: grid;
+  gap: 0.125rem;
+}
+
+.jui-stepper__label {
+  color: var(--jui-color-text);
+  font-size: 0.9375rem;
+}
+
+.jui-stepper__description {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}

@@ -1,0 +1,12 @@
+@import '../../styles/tokens.css';
+
+.jui-toolbar {
+  align-items: center;
+  background: var(--jui-color-muted);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}

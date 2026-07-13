@@ -2,7 +2,8 @@
 
 .jui-modal__overlay {
   align-items: center;
-  background: rgb(15 23 42 / 50%);
+  background: rgb(237 243 248 / 72%);
+  backdrop-filter: blur(12px);
   display: flex;
   inset: 0;
   justify-content: center;
@@ -12,7 +13,7 @@
 }
 
 .jui-modal {
-  background: var(--jui-color-surface);
+  background: rgb(255 255 255 / 92%);
   border-radius: var(--jui-radius-md);
   box-shadow: var(--jui-shadow-md);
   color: var(--jui-color-text);
@@ -27,7 +28,7 @@
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 .jui-modal__title {
@@ -39,5 +40,5 @@
 .jui-modal__body {
   color: var(--jui-color-text-muted);
   line-height: 1.6;
-  padding: 1rem;
+  padding: 1.2rem;
 }

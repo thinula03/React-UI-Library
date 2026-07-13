@@ -1,0 +1,14 @@
+@import '../../styles/tokens.css';
+
+.jui-sparkline {
+  display: block;
+  max-width: 100%;
+}
+
+.jui-sparkline__line {
+  fill: none;
+  stroke: var(--jui-color-primary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}

@@ -1,0 +1,41 @@
+@import '../../styles/tokens.css';
+
+.jui-command-menu {
+  background: var(--jui-color-surface);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-sm);
+  display: grid;
+  overflow: hidden;
+}
+
+.jui-command-menu__item {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--jui-color-text);
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-size: 0.875rem;
+  justify-content: space-between;
+  min-height: 2.5rem;
+  padding: 0 0.75rem;
+  text-align: left;
+}
+
+.jui-command-menu__item:hover,
+.jui-command-menu__item:focus-visible {
+  background: var(--jui-color-muted);
+  outline: none;
+}
+
+.jui-command-menu__shortcut,
+.jui-command-menu__empty {
+  color: var(--jui-color-text-muted);
+  font-size: 0.8125rem;
+}
+
+.jui-command-menu__empty {
+  padding: 0.875rem;
+}

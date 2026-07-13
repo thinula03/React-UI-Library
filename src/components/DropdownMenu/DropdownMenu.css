@@ -1,0 +1,71 @@
+@import '../../styles/tokens.css';
+
+.jui-dropdown {
+  display: inline-flex;
+  position: relative;
+}
+
+.jui-dropdown__trigger {
+  cursor: pointer;
+  list-style: none;
+}
+
+.jui-dropdown__trigger::-webkit-details-marker {
+  display: none;
+}
+
+.jui-dropdown__trigger:focus-visible {
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}
+
+.jui-dropdown:not([open]) .jui-dropdown__menu {
+  display: none;
+}
+
+.jui-dropdown__menu {
+  background: rgb(255 255 255 / 94%);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgb(255 255 255 / 92%);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-md);
+  display: grid;
+  min-width: 12rem;
+  padding: 0.4rem;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  z-index: 30;
+}
+
+.jui-dropdown--left .jui-dropdown__menu {
+  left: 0;
+}
+
+.jui-dropdown--right .jui-dropdown__menu {
+  right: 0;
+}
+
+.jui-dropdown__item {
+  background: transparent;
+  border: 0;
+  border-radius: var(--jui-radius-sm);
+  color: var(--jui-color-text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.875rem;
+  min-height: 2.45rem;
+  padding: 0 0.85rem;
+  text-align: left;
+}
+
+.jui-dropdown__item:hover:not(:disabled),
+.jui-dropdown__item:focus-visible {
+  background: var(--jui-color-muted);
+  outline: none;
+}
+
+.jui-dropdown__item:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

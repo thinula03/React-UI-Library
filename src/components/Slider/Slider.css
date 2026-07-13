@@ -1,0 +1,31 @@
+@import '../../styles/tokens.css';
+
+.jui-slider {
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.jui-slider__meta {
+  align-items: center;
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 650;
+  justify-content: space-between;
+}
+
+.jui-slider__output {
+  color: var(--jui-color-text-muted);
+}
+
+.jui-slider__input {
+  accent-color: var(--jui-color-primary);
+  min-height: 2rem;
+  width: 100%;
+}
+
+.jui-slider__input:focus-visible {
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}

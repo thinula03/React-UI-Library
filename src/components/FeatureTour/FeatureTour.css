@@ -1,0 +1,49 @@
+@import '../../styles/tokens.css';
+
+.jui-feature-tour {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jui-feature-tour__step {
+  align-items: flex-start;
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  color: var(--jui-color-text-muted);
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.jui-feature-tour__step--active {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: var(--jui-color-text);
+}
+
+.jui-feature-tour__marker {
+  align-items: center;
+  background: var(--jui-color-primary);
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.75rem;
+  font-weight: 800;
+  height: 1.5rem;
+  justify-content: center;
+  width: 1.5rem;
+}
+
+.jui-feature-tour__copy {
+  display: grid;
+  gap: 0.125rem;
+}
+
+.jui-feature-tour__copy span {
+  font-size: 0.875rem;
+  line-height: 1.45;
+}

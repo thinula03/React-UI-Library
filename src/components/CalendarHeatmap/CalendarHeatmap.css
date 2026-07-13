@@ -1,0 +1,32 @@
+@import '../../styles/tokens.css';
+
+.jui-calendar-heatmap {
+  display: grid;
+  gap: 0.25rem;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 0.75rem);
+  overflow: auto;
+}
+
+.jui-calendar-heatmap__day {
+  background: #e2e8f0;
+  border-radius: 3px;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.jui-calendar-heatmap__day--1 {
+  background: #bfdbfe;
+}
+
+.jui-calendar-heatmap__day--2 {
+  background: #60a5fa;
+}
+
+.jui-calendar-heatmap__day--3 {
+  background: #2563eb;
+}
+
+.jui-calendar-heatmap__day--4 {
+  background: #1e40af;
+}
