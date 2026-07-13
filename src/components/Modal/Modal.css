@@ -1,0 +1,43 @@
+@import '../../styles/tokens.css';
+
+.jui-modal__overlay {
+  align-items: center;
+  background: rgb(15 23 42 / 50%);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 1rem;
+  position: fixed;
+  z-index: 1000;
+}
+
+.jui-modal {
+  background: var(--jui-color-surface);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-md);
+  color: var(--jui-color-text);
+  max-width: 32rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.jui-modal__header {
+  align-items: center;
+  border-bottom: 1px solid var(--jui-color-border);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.jui-modal__title {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.jui-modal__body {
+  color: var(--jui-color-text-muted);
+  line-height: 1.6;
+  padding: 1rem;
+}

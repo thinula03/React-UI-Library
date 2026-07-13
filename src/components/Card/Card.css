@@ -1,0 +1,23 @@
+@import '../../styles/tokens.css';
+
+.jui-card {
+  background: var(--jui-color-surface);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-sm);
+  color: var(--jui-color-text);
+  overflow: hidden;
+}
+
+.jui-card__header {
+  align-items: center;
+  border-bottom: 1px solid var(--jui-color-border);
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.jui-card__body {
+  padding: 1rem;
+}

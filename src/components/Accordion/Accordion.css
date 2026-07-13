@@ -1,0 +1,59 @@
+@import '../../styles/tokens.css';
+
+.jui-accordion {
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  color: var(--jui-color-text);
+  overflow: hidden;
+}
+
+.jui-accordion__item + .jui-accordion__item {
+  border-top: 1px solid var(--jui-color-border);
+}
+
+.jui-accordion__trigger {
+  align-items: center;
+  background: var(--jui-color-surface);
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 650;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.jui-accordion__trigger:hover:not(:disabled) {
+  background: var(--jui-color-muted);
+}
+
+.jui-accordion__trigger:focus-visible {
+  box-shadow: inset var(--jui-focus-ring);
+  outline: none;
+}
+
+.jui-accordion__trigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.jui-accordion__trigger[aria-expanded='true'] .jui-accordion__chevron {
+  transform: rotate(45deg);
+}
+
+.jui-accordion__chevron {
+  color: var(--jui-color-text-muted);
+  transition: transform 160ms ease;
+}
+
+.jui-accordion__panel {
+  color: var(--jui-color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  padding: 0 1rem 1rem;
+}

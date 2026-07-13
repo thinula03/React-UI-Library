@@ -1,0 +1,50 @@
+@import '../../styles/tokens.css';
+
+.jui-field {
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 0.375rem;
+  width: 100%;
+}
+
+.jui-field__label {
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+
+.jui-text-input {
+  background: var(--jui-color-bg);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  color: var(--jui-color-text);
+  font: inherit;
+  min-height: 2.5rem;
+  padding: 0 0.75rem;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+  width: 100%;
+}
+
+.jui-text-input::placeholder {
+  color: #94a3b8;
+}
+
+.jui-text-input:focus {
+  border-color: var(--jui-color-primary);
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}
+
+.jui-text-input--error {
+  border-color: var(--jui-color-danger);
+}
+
+.jui-field__message {
+  color: var(--jui-color-text-muted);
+  font-size: 0.8125rem;
+}
+
+.jui-text-input--error + .jui-field__message {
+  color: var(--jui-color-danger-hover);
+}

@@ -1,0 +1,18 @@
+@import '../../styles/tokens.css';
+
+.jui-divider {
+  border: 0;
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.jui-divider--horizontal {
+  border-top: 1px solid var(--jui-color-border);
+  width: 100%;
+}
+
+.jui-divider--vertical {
+  align-self: stretch;
+  border-left: 1px solid var(--jui-color-border);
+  min-height: 1rem;
+}

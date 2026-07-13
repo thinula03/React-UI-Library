@@ -1,0 +1,41 @@
+@import '../../styles/tokens.css';
+
+.jui-pagination {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.jui-pagination__button {
+  background: var(--jui-color-surface);
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  color: var(--jui-color-text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 650;
+  min-height: 2.25rem;
+  padding: 0 0.75rem;
+}
+
+.jui-pagination__button:hover:not(:disabled) {
+  background: var(--jui-color-muted);
+}
+
+.jui-pagination__button:focus-visible {
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}
+
+.jui-pagination__button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.jui-pagination__status {
+  color: var(--jui-color-text-muted);
+  font-size: 0.875rem;
+  font-weight: 650;
+}

@@ -1,0 +1,20 @@
+:root {
+  --jui-color-bg: #ffffff;
+  --jui-color-surface: #ffffff;
+  --jui-color-muted: #f8fafc;
+  --jui-color-border: #cbd5e1;
+  --jui-color-border-strong: #94a3b8;
+  --jui-color-text: #0f172a;
+  --jui-color-text-muted: #475569;
+  --jui-color-primary: #2563eb;
+  --jui-color-primary-hover: #1d4ed8;
+  --jui-color-danger: #dc2626;
+  --jui-color-danger-hover: #b91c1c;
+  --jui-color-success: #047857;
+  --jui-color-warning: #b45309;
+  --jui-radius-sm: 6px;
+  --jui-radius-md: 8px;
+  --jui-shadow-sm: 0 1px 2px rgb(15 23 42 / 8%);
+  --jui-shadow-md: 0 10px 25px rgb(15 23 42 / 10%);
+  --jui-focus-ring: 0 0 0 3px rgb(37 99 235 / 25%);
+}

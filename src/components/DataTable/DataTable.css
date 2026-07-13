@@ -1,0 +1,50 @@
+@import '../../styles/tokens.css';
+
+.jui-data-table__wrap {
+  border: 1px solid var(--jui-color-border);
+  border-radius: var(--jui-radius-md);
+  overflow: auto;
+  width: 100%;
+}
+
+.jui-data-table {
+  border-collapse: collapse;
+  color: var(--jui-color-text);
+  font-size: 0.875rem;
+  min-width: 100%;
+}
+
+.jui-data-table th {
+  background: var(--jui-color-muted);
+  color: var(--jui-color-text-muted);
+  font-weight: 750;
+}
+
+.jui-data-table th,
+.jui-data-table td {
+  border-bottom: 1px solid var(--jui-color-border);
+  padding: 0.75rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.jui-data-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.jui-data-table__cell--left {
+  text-align: left;
+}
+
+.jui-data-table__cell--center {
+  text-align: center;
+}
+
+.jui-data-table__cell--right {
+  text-align: right;
+}
+
+.jui-data-table__empty {
+  color: var(--jui-color-text-muted);
+  text-align: center;
+}

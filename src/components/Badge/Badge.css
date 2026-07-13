@@ -1,0 +1,40 @@
+@import '../../styles/tokens.css';
+
+.jui-badge {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  min-height: 1.5rem;
+  padding: 0 0.625rem;
+  white-space: nowrap;
+}
+
+.jui-badge--neutral {
+  background: var(--jui-color-muted);
+  border-color: var(--jui-color-border);
+  color: var(--jui-color-text);
+}
+
+.jui-badge--primary {
+  background: #eff6ff;
+  color: var(--jui-color-primary-hover);
+}
+
+.jui-badge--success {
+  background: #ecfdf5;
+  color: var(--jui-color-success);
+}
+
+.jui-badge--warning {
+  background: #fffbeb;
+  color: var(--jui-color-warning);
+}
+
+.jui-badge--danger {
+  background: #fef2f2;
+  color: var(--jui-color-danger-hover);
+}

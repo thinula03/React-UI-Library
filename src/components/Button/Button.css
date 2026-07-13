@@ -1,0 +1,97 @@
+@import '../../styles/tokens.css';
+
+.jui-button {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--jui-radius-md);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-weight: 650;
+  gap: 0.5rem;
+  justify-content: center;
+  line-height: 1;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease,
+    transform 120ms ease;
+  white-space: nowrap;
+}
+
+.jui-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.jui-button:focus-visible {
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}
+
+.jui-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.jui-button--sm {
+  font-size: 0.875rem;
+  min-height: 2rem;
+  padding: 0 0.75rem;
+}
+
+.jui-button--md {
+  font-size: 0.9375rem;
+  min-height: 2.5rem;
+  padding: 0 1rem;
+}
+
+.jui-button--lg {
+  font-size: 1rem;
+  min-height: 3rem;
+  padding: 0 1.25rem;
+}
+
+.jui-button--full-width {
+  width: 100%;
+}
+
+.jui-button--primary {
+  background: var(--jui-color-primary);
+  box-shadow: 0 8px 18px rgb(37 99 235 / 20%);
+  color: #ffffff;
+}
+
+.jui-button--primary:hover:not(:disabled) {
+  background: var(--jui-color-primary-hover);
+}
+
+.jui-button--secondary {
+  background: var(--jui-color-muted);
+  border-color: var(--jui-color-border);
+  color: var(--jui-color-text);
+}
+
+.jui-button--secondary:hover:not(:disabled) {
+  background: #f1f5f9;
+  border-color: var(--jui-color-border-strong);
+}
+
+.jui-button--ghost {
+  background: transparent;
+  color: var(--jui-color-primary-hover);
+}
+
+.jui-button--ghost:hover:not(:disabled) {
+  background: #eff6ff;
+}
+
+.jui-button--danger {
+  background: var(--jui-color-danger);
+  box-shadow: 0 8px 18px rgb(220 38 38 / 18%);
+  color: #ffffff;
+}
+
+.jui-button--danger:hover:not(:disabled) {
+  background: var(--jui-color-danger-hover);
+}

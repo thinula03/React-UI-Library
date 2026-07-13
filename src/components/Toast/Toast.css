@@ -1,0 +1,76 @@
+@import '../../styles/tokens.css';
+
+.jui-toast-viewport {
+  bottom: 1rem;
+  display: grid;
+  gap: 0.75rem;
+  max-width: min(24rem, calc(100vw - 2rem));
+  position: fixed;
+  right: 1rem;
+  width: 100%;
+  z-index: 1100;
+}
+
+.jui-toast {
+  align-items: flex-start;
+  background: var(--jui-color-surface);
+  border: 1px solid var(--jui-color-border);
+  border-left: 4px solid var(--jui-color-primary);
+  border-radius: var(--jui-radius-md);
+  box-shadow: var(--jui-shadow-md);
+  color: var(--jui-color-text);
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr auto auto;
+  padding: 0.875rem;
+}
+
+.jui-toast--success {
+  border-left-color: var(--jui-color-success);
+}
+
+.jui-toast--warning {
+  border-left-color: var(--jui-color-warning);
+}
+
+.jui-toast--danger {
+  border-left-color: var(--jui-color-danger);
+}
+
+.jui-toast__content {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.jui-toast__title {
+  font-size: 0.9375rem;
+  line-height: 1.25;
+}
+
+.jui-toast__message {
+  color: var(--jui-color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.jui-toast__action {
+  align-self: center;
+}
+
+.jui-toast__close {
+  background: transparent;
+  border: 0;
+  border-radius: var(--jui-radius-sm);
+  color: var(--jui-color-text-muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.25rem;
+  height: 1.75rem;
+  line-height: 1;
+  width: 1.75rem;
+}
+
+.jui-toast__close:focus-visible {
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}

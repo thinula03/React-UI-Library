@@ -1,0 +1,38 @@
+@import '../../styles/tokens.css';
+
+.jui-checkbox {
+  align-items: flex-start;
+  color: var(--jui-color-text);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 0.625rem;
+}
+
+.jui-checkbox__input {
+  accent-color: var(--jui-color-primary);
+  height: 1rem;
+  margin: 0.125rem 0 0;
+  width: 1rem;
+}
+
+.jui-checkbox__input:focus-visible {
+  box-shadow: var(--jui-focus-ring);
+  outline: none;
+}
+
+.jui-checkbox__content {
+  display: grid;
+  gap: 0.125rem;
+}
+
+.jui-checkbox__label {
+  font-size: 0.9375rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.jui-checkbox__message {
+  color: var(--jui-color-text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}

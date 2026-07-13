@@ -1,0 +1,74 @@
+@import '../../styles/tokens.css';
+
+.jui-switch {
+  align-items: center;
+  color: var(--jui-color-text);
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.jui-switch__content {
+  display: grid;
+  gap: 0.125rem;
+}
+
+.jui-switch__label {
+  font-size: 0.9375rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.jui-switch__message {
+  color: var(--jui-color-text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+.jui-switch__control {
+  display: inline-flex;
+  position: relative;
+}
+
+.jui-switch__input {
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.jui-switch__track {
+  background: #cbd5e1;
+  border-radius: 999px;
+  display: inline-flex;
+  height: 1.5rem;
+  position: relative;
+  transition: background-color 160ms ease;
+  width: 2.75rem;
+}
+
+.jui-switch__track::after {
+  background: #ffffff;
+  border-radius: 999px;
+  box-shadow: var(--jui-shadow-sm);
+  content: '';
+  height: 1.125rem;
+  left: 0.1875rem;
+  position: absolute;
+  top: 0.1875rem;
+  transition: transform 160ms ease;
+  width: 1.125rem;
+}
+
+.jui-switch__input:checked + .jui-switch__track {
+  background: var(--jui-color-primary);
+}
+
+.jui-switch__input:checked + .jui-switch__track::after {
+  transform: translateX(1.25rem);
+}
+
+.jui-switch__input:focus-visible + .jui-switch__track {
+  box-shadow: var(--jui-focus-ring);
+}
